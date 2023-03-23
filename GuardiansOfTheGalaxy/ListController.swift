@@ -58,21 +58,19 @@ class ListController: UITableViewController {
         return true
     }
     
-
-    /*
-    // Override to support editing the table view.
+    
+    /// Allows to delete a row and its datas from the items list
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            self.items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
-
     
-    /// Allows a row to be moved to an other place
+    
+    /// Moves a row to an other place
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         let item = items[fromIndexPath.row]
         items.remove(at: fromIndexPath.row)
@@ -81,7 +79,7 @@ class ListController: UITableViewController {
     }
    
 
-    ///
+    /// Allows a row to be moved
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
@@ -89,7 +87,8 @@ class ListController: UITableViewController {
 
     
     // MARK: - Navigation
-
+        
+        /// Segue performed when a row is selected
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard segue.identifier == detailSegue else { return }
             guard let nextView = segue.destination as? DetailController else { return }
