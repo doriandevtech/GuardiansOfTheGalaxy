@@ -1,4 +1,4 @@
-#  GuardiansOfTheGalaxy 🌠🛸🌌
+#  GuardiansOfTheGalaxy app 🌠🛸🌌
 
 ## Are you a fan of The Guardians of the Galaxy films ? 🤔
 
