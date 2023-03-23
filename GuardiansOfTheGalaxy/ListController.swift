@@ -21,15 +21,17 @@ class ListController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /// Defines the number of section inside the UITableView
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
+    /// Defines the number of row(s) in each section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
-    
+    /// Defines the content of each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         if let cellReuse = tableView.dequeueReusableCell(withIdentifier: reuseID) as? CharacterCell {
@@ -40,18 +42,18 @@ class ListController: UITableViewController {
         return cell
     }
     
+    /// Defnies the actions made when a given row is selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = items[indexPath.row]
         performSegue(withIdentifier: detailSegue, sender: character)
     }
     
+    /// Configures the height of a row
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
-
-    
-    // Override to support conditional editing of the table view.
+    /// Allows to edit a row
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
