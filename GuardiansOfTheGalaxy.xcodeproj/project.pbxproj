@@ -13,6 +13,11 @@
 		F40FB5BE29CB9A6700EABFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5BC29CB9A6700EABFFB /* Main.storyboard */; };
 		F40FB5C029CB9A6800EABFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */; };
 		F40FB5C329CB9A6800EABFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5C129CB9A6800EABFFB /* LaunchScreen.storyboard */; };
+		F4FC6DB429CC4A4A00C3A15C /* ListCaractersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC6DB329CC4A4A00C3A15C /* ListCaractersController.swift */; };
+		F4FC6DB629CC4A9800C3A15C /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC6DB529CC4A9800C3A15C /* Datas.swift */; };
+		F4FC6DB829CC4AB900C3A15C /* Caracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC6DB729CC4AB900C3A15C /* Caracter.swift */; };
+		F4FC6DBA29CC51BB00C3A15C /* CaracterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC6DB929CC51BB00C3A15C /* CaracterCell.swift */; };
+		F4FC6DBE29CC631E00C3A15C /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC6DBD29CC631E00C3A15C /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40FB5C229CB9A6800EABFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40FB5C429CB9A6800EABFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FC6DB329CC4A4A00C3A15C /* ListCaractersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCaractersController.swift; sourceTree = "<group>"; };
+		F4FC6DB529CC4A9800C3A15C /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		F4FC6DB729CC4AB900C3A15C /* Caracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caracter.swift; sourceTree = "<group>"; };
+		F4FC6DB929CC51BB00C3A15C /* CaracterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracterCell.swift; sourceTree = "<group>"; };
+		F4FC6DBD29CC631E00C3A15C /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		F40FB5AA29CB9A6700EABFFB = {
 			isa = PBXGroup;
 			children = (
+				F4FC6DB929CC51BB00C3A15C /* CaracterCell.swift */,
 				F40FB5B529CB9A6700EABFFB /* GuardiansOfTheGalaxy */,
 				F40FB5B429CB9A6700EABFFB /* Products */,
 			);
@@ -63,6 +74,10 @@
 				F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */,
 				F40FB5C129CB9A6800EABFFB /* LaunchScreen.storyboard */,
 				F40FB5C429CB9A6800EABFFB /* Info.plist */,
+				F4FC6DB329CC4A4A00C3A15C /* ListCaractersController.swift */,
+				F4FC6DBD29CC631E00C3A15C /* DetailController.swift */,
+				F4FC6DB529CC4A9800C3A15C /* Datas.swift */,
+				F4FC6DB729CC4AB900C3A15C /* Caracter.swift */,
 			);
 			path = GuardiansOfTheGalaxy;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FC6DBE29CC631E00C3A15C /* DetailController.swift in Sources */,
+				F4FC6DB429CC4A4A00C3A15C /* ListCaractersController.swift in Sources */,
 				F40FB5BB29CB9A6700EABFFB /* ViewController.swift in Sources */,
+				F4FC6DB829CC4AB900C3A15C /* Caracter.swift in Sources */,
+				F4FC6DB629CC4A9800C3A15C /* Datas.swift in Sources */,
 				F40FB5B729CB9A6700EABFFB /* AppDelegate.swift in Sources */,
 				F40FB5B929CB9A6700EABFFB /* SceneDelegate.swift in Sources */,
+				F4FC6DBA29CC51BB00C3A15C /* CaracterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
