@@ -1,5 +1,5 @@
 //
-//  ListCaractersController.swift
+//  ListCharactersController.swift
 //  GuardiansOfTheGalaxy
 //
 //  Created by Dorian Emenir on 23/03/2023.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ListCaractersController: UITableViewController {
+class ListCharactersController: UITableViewController {
         
-    var items: [Caracter] = Datas.shared.caracters
+    var items: [Character] = Datas.shared.characters
     
     let reuseID = "reuseID"
     let detailSegue = "ShowDetail"
@@ -31,7 +31,7 @@ class ListCaractersController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
-        if let cellReuse = tableView.dequeueReusableCell(withIdentifier: reuseID) as? CaracterCell {
+        if let cellReuse = tableView.dequeueReusableCell(withIdentifier: reuseID) as? CharacterCell {
             cellReuse.setupCell(name: item.name, imageV: item.imagePath)
             return cellReuse
         }
@@ -40,8 +40,8 @@ class ListCaractersController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let caracter = items[indexPath.row]
-        performSegue(withIdentifier: detailSegue, sender: caracter)
+        let character = items[indexPath.row]
+        performSegue(withIdentifier: detailSegue, sender: character)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -90,7 +90,7 @@ class ListCaractersController: UITableViewController {
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard segue.identifier == detailSegue else { return }
             guard let nextView = segue.destination as? DetailController else { return }
-            nextView.caracter = sender as? Caracter
+            nextView.character = sender as? Character
         }
     
 

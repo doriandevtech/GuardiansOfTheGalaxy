@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Caracter {
+struct Character {
 var name: String
 var desc: String
 var imagePath: String

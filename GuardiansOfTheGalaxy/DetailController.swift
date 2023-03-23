@@ -13,11 +13,11 @@ class DetailController: UIViewController {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
     
-    var caracter: Caracter?
+    var character: Character?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let c = caracter else { return }
+        guard let c = character else { return }
         imageV.image = UIImage(named: c.imagePath)
         nameLbl.text = c.name
         descLbl.text = c.desc
