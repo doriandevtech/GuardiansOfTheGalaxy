@@ -107,6 +107,9 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="3hk-bx-2gy" firstAttribute="leading" secondItem="M8r-H1-lQu" secondAttribute="leading" id="72g-ry-KG9"/>
+                                    <constraint firstItem="3hk-bx-2gy" firstAttribute="top" secondItem="M8r-H1-lQu" secondAttribute="top" id="QZg-mV-FzB"/>
+                                    <constraint firstAttribute="bottom" secondItem="3hk-bx-2gy" secondAttribute="bottom" id="UBQ-K8-Upv"/>
                                     <constraint firstAttribute="height" constant="100" id="got-oi-o1U"/>
                                     <constraint firstAttribute="bottom" secondItem="KxR-HL-How" secondAttribute="bottom" id="ndh-QJ-Cmp"/>
                                 </constraints>
