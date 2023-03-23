@@ -1,5 +1,5 @@
 //
-//  ListCharactersController.swift
+//  ListController.swift
 //  GuardiansOfTheGalaxy
 //
 //  Created by Dorian Emenir on 23/03/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListCharactersController: UITableViewController {
+class ListController: UITableViewController {
         
     var items: [Character] = Datas.shared.characters
     

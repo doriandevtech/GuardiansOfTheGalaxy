@@ -11,7 +11,7 @@
         <!--The Guardians-->
         <scene sceneID="Zhr-pZ-Kko">
             <objects>
-                <tableViewController id="elW-un-65U" customClass="ListCharactersController" customModule="GuardiansOfTheGalaxy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="elW-un-65U" customClass="ListController" customModule="GuardiansOfTheGalaxy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DN5-cy-Caz">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
