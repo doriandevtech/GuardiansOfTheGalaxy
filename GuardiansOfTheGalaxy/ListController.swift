@@ -42,7 +42,7 @@ class ListController: UITableViewController {
         return cell
     }
     
-    /// Defnies the actions made when a given row is selected
+    /// Defines the actions made when a given row is selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = items[indexPath.row]
         performSegue(withIdentifier: detailSegue, sender: character)
@@ -71,20 +71,21 @@ class ListController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support rearranging the table view.
+    
+    /// Allows a row to be moved to an other place
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let item = items[fromIndexPath.row]
+        items.remove(at: fromIndexPath.row)
+        items.insert(item, at: to.row)
 
     }
-    */
+   
 
-    /*
-    // Override to support conditional rearranging of the table view.
+    ///
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
 
     
     // MARK: - Navigation
