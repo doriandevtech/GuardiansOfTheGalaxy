@@ -58,7 +58,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="The Guardians" id="h90-tV-v7V"/>
+                    <navigationItem key="navigationItem" title="The Guardians" id="h90-tV-v7V">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="5mX-wP-o77">
+                            <connections>
+                                <action selector="addCharacterPressed:" destination="elW-un-65U" id="Elj-oZ-iSg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="AlY-nc-Ce3" kind="presentation" identifier="ShowDetail" id="LhB-X8-tYQ"/>
                     </connections>
