@@ -9,9 +9,13 @@ import UIKit
 
 class ListController: UITableViewController {
         
+    /// Declare charcaters datas threw a item
     var items: [Character] = Datas.shared.characters
     
+    /// Reusable cell identifier
     let reuseID = "reuseID"
+    
+    /// Segue's identifier from ListController view to DeailController's
     let detailSegue = "ShowDetail"
 
     override func viewDidLoad() {
@@ -25,12 +29,14 @@ class ListController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
 
     /// Defines the number of row(s) in each section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
+    
     /// Defines the content of each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
@@ -42,16 +48,19 @@ class ListController: UITableViewController {
         return cell
     }
     
+    
     /// Defines the actions made when a given row is selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = items[indexPath.row]
         performSegue(withIdentifier: detailSegue, sender: character)
     }
     
+    
     /// Configures the height of a row
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
     
     /// Allows to edit a row
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -85,6 +94,8 @@ class ListController: UITableViewController {
         return true
     }
     
+    
+    /// Add one randmon charcater at a random place in the tableView
     @IBAction func addCharacterPressed(_ sender: UIBarButtonItem) {
         let newCharacter = Datas.shared.characters[Int.random(in: 0..<Datas.shared.characters.count)]
         let row = Int.random(in: 0..<items.count)
