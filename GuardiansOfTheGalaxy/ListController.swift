@@ -84,6 +84,13 @@ class ListController: UITableViewController {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
+    
+    @IBAction func addCharacterPressed(_ sender: UIBarButtonItem) {
+        let newCharacter = Datas.shared.characters[Int.random(in: 0..<Datas.shared.characters.count)]
+        let row = Int.random(in: 0..<items.count)
+        items.insert(newCharacter, at: row)
+        tableView.insertRows(at: [IndexPath(row: row, section: 0)], with: .fade)
+    }
 
     
     // MARK: - Navigation
