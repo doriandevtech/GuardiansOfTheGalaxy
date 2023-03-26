@@ -30,14 +30,15 @@
 
 ### Home Page view:
 
-![1](https://user-images.githubusercontent.com/61510923/227367139-75aa48ae-8d2a-49cf-9def-edfa9b4d3c17.png)
+![5](https://user-images.githubusercontent.com/61510923/227803067-32aee3a4-938c-46f3-a42f-b0ceb27d60ba.png)
 
 
-### Editing cell available:
+### Adding 🆕 + Editing ♻️ cells available
 
-![2](https://user-images.githubusercontent.com/61510923/227367229-8fb18210-84eb-4eab-947c-509f24dc8e30.png)
+![7](https://user-images.githubusercontent.com/61510923/227803099-5f55c245-464f-44a4-b004-e9ad5741060b.png)
 
-![3](https://user-images.githubusercontent.com/61510923/227367235-05169ea0-9751-4e3c-a96f-564a30eb28de.png)
+![6](https://user-images.githubusercontent.com/61510923/227803094-2d1d75c4-05e4-41ba-bbf2-c2a780de6e69.png)
+
 
 ### Detailed page for each character
 
