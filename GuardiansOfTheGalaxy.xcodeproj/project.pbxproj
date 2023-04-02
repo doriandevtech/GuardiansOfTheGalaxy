@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F40FB5B729CB9A6700EABFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FB5B629CB9A6700EABFFB /* AppDelegate.swift */; };
 		F40FB5B929CB9A6700EABFFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FB5B829CB9A6700EABFFB /* SceneDelegate.swift */; };
-		F40FB5BB29CB9A6700EABFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FB5BA29CB9A6700EABFFB /* ViewController.swift */; };
 		F40FB5BE29CB9A6700EABFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5BC29CB9A6700EABFFB /* Main.storyboard */; };
 		F40FB5C029CB9A6800EABFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */; };
 		F40FB5C329CB9A6800EABFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FB5C129CB9A6800EABFFB /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 		F40FB5B329CB9A6700EABFFB /* GuardiansOfTheGalaxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardiansOfTheGalaxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40FB5B629CB9A6700EABFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F40FB5B829CB9A6700EABFFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F40FB5BA29CB9A6700EABFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F40FB5BD29CB9A6700EABFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40FB5C229CB9A6800EABFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,20 +66,43 @@
 		F40FB5B529CB9A6700EABFFB /* GuardiansOfTheGalaxy */ = {
 			isa = PBXGroup;
 			children = (
+				F4BA92F729D9C0A90029924F /* Model */,
+				F4BA92F829D9C0B70029924F /* View */,
+				F4BA92F929D9C0BF0029924F /* Controller */,
 				F40FB5B629CB9A6700EABFFB /* AppDelegate.swift */,
 				F40FB5B829CB9A6700EABFFB /* SceneDelegate.swift */,
-				F40FB5BA29CB9A6700EABFFB /* ViewController.swift */,
 				F40FB5BC29CB9A6700EABFFB /* Main.storyboard */,
 				F40FB5BF29CB9A6800EABFFB /* Assets.xcassets */,
 				F40FB5C129CB9A6800EABFFB /* LaunchScreen.storyboard */,
 				F40FB5C429CB9A6800EABFFB /* Info.plist */,
-				F4FC6DB329CC4A4A00C3A15C /* ListController.swift */,
-				F4FC6DBD29CC631E00C3A15C /* DetailController.swift */,
-				F4FC6DB529CC4A9800C3A15C /* Datas.swift */,
-				F4FC6DB729CC4AB900C3A15C /* Character.swift */,
-				F4FC6DB929CC51BB00C3A15C /* CharacterCell.swift */,
 			);
 			path = GuardiansOfTheGalaxy;
+			sourceTree = "<group>";
+		};
+		F4BA92F729D9C0A90029924F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC6DB529CC4A9800C3A15C /* Datas.swift */,
+				F4FC6DB729CC4AB900C3A15C /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4BA92F829D9C0B70029924F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC6DB929CC51BB00C3A15C /* CharacterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4BA92F929D9C0BF0029924F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC6DB329CC4A4A00C3A15C /* ListController.swift */,
+				F4FC6DBD29CC631E00C3A15C /* DetailController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +178,6 @@
 			files = (
 				F4FC6DBE29CC631E00C3A15C /* DetailController.swift in Sources */,
 				F4FC6DB429CC4A4A00C3A15C /* ListController.swift in Sources */,
-				F40FB5BB29CB9A6700EABFFB /* ViewController.swift in Sources */,
 				F4FC6DB829CC4AB900C3A15C /* Character.swift in Sources */,
 				F4FC6DB629CC4A9800C3A15C /* Datas.swift in Sources */,
 				F40FB5B729CB9A6700EABFFB /* AppDelegate.swift in Sources */,
