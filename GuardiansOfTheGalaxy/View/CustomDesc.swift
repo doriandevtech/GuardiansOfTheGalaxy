@@ -20,7 +20,10 @@ class CustomDesc: UILabel {
     }
     
     func setupDesc() {
-        self.textColor = UIColor.red
-        self.font = UIFont(name: "Chalkboard SE", size: 14)
+        textColor = UIColor.secondaryLabel
+        adjustsFontSizeToFitWidth = true
+        font = UIFont(name: "Chalkboard SE", size: 14)
+        textAlignment = .natural
+        numberOfLines = 0
     }
 }
