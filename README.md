@@ -8,11 +8,13 @@
 ### Language:
 - Swift
 
+### Pattern:
+- MVC (Model View Controller)
+
 ### Swift principles used:
 - UIKit
 - Classes
 - IBOutlets & IBOutletCollections
-- Extension
 - UITableViewController
 - Segue
 - TableViewCell
