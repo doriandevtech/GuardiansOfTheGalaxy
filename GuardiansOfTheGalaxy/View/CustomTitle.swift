@@ -22,6 +22,7 @@ class CustomTitle: UILabel {
     func setupTitle() {
         self.textColor = UIColor.black
         self.font = UIFont(name: "Chalkboard SE", size: 30)
+        self.adjustsFontSizeToFitWidth = true
     }
 
 }
