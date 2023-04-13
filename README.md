@@ -28,7 +28,7 @@
 ## Next steps :
 - I am working on improving the UI experience (having a scrollable view on the detaiController view...).
 
-## Here the screenshot of my app ⤵️
+## Here are some screenshots of my app ⤵️
 
 ### Home Page view:
 
